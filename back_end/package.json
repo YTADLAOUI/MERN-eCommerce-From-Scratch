@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "back_ecom",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YTADLAOUI/MERN-eCommerce-From-Scratch.git"
+  },
+  "author": "youssef",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YTADLAOUI/MERN-eCommerce-From-Scratch/issues"
+  },
+  "homepage": "https://github.com/YTADLAOUI/MERN-eCommerce-From-Scratch#readme",
+  "description": ""
+}

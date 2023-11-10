@@ -49,7 +49,6 @@ const productSchema =mongoose.Schema({
     require:true,
     default:0
   },
-
   reviews:[reviewSchema],
   price:{
     type:Number,

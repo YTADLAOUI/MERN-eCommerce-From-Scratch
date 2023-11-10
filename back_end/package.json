@@ -8,7 +8,9 @@
     "start:server": "nodemon .",
     "client": "npm start --prefix front_end",
     "dev": "concurrently\"npm run start:server\"npm run client\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "data:import":"node C:/Users/Youcode/Desktop/mern-application/back_end/src/data/seederes/seeder.js",
+    "data:destroy":"node C:/Users/Youcode/Desktop/mern-application/back_end/src/data/seederes/seeder.js -d"
   },
   "dependencies": {
     "axios": "^1.6.0",

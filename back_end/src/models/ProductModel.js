@@ -29,7 +29,6 @@ const productSchema =mongoose.Schema({
   brand:{
     type:String,
     required:true,
-    unique:false
   },
   category:{
     type:String,

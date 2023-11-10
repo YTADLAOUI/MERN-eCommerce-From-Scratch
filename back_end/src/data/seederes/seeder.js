@@ -23,6 +23,25 @@ const { products } = require('../products')
     process.exit()
   }catch(error){
 console.log(error)
+process.exit(1)
   }
 }
-module.exports={importData}
+const destroyData=async ()=>{
+  console.log('deleted')
+  try{
+     await User.deleteMany()
+     await Order.deleteMany()
+     await Product.deleteMany()
+
+    console.log('dataDeleted')
+    process.exit()
+  }catch(error){
+  console.log(error)
+  process.exit(1)
+  }
+}
+if(process.argv[2]==='-d'){
+  destroyData()
+}else{
+  importData()
+}

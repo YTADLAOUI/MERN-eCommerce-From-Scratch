@@ -24,6 +24,5 @@ res.status(200).json(product)
 })
 const PORT= process.env.PORT || 5000;
 ConnectionMg.conncctDB()
-// importData()
-importData()
+
 app.listen(PORT,console.log(`Server running on port ${PORT} ...`));

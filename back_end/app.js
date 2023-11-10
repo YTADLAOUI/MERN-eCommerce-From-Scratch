@@ -1,8 +1,11 @@
 const express= require("express");
 const app=express()
 require("dotenv").config();
-const products=require("./src/database/products");
-const ConnectionMg = require("./src/database/ConnectionMg");
+const products=require("./src/data/products");
+const ConnectionMg = require("./src/configs/ConnectionMg");
+const { importData } = require("./src/data/seederes/seeder");
+
+
 
 
 
@@ -21,4 +24,6 @@ res.status(200).json(product)
 })
 const PORT= process.env.PORT || 5000;
 ConnectionMg.conncctDB()
+// importData()
+importData()
 app.listen(PORT,console.log(`Server running on port ${PORT} ...`));

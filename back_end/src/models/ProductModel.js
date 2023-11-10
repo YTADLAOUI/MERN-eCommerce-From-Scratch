@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose= require('mongoose')
 
 const reviewSchema=mongoose.Schema({
   name:{
@@ -29,7 +29,7 @@ const productSchema =mongoose.Schema({
   brand:{
     type:String,
     required:true,
-    unique:true
+    unique:false
   },
   category:{
     type:String,
@@ -70,4 +70,4 @@ const productSchema =mongoose.Schema({
 })
 
 const Product= mongoose.model('Product',productSchema);
-export default Product
+module.exports={Product}

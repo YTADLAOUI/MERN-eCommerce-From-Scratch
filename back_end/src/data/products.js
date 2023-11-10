@@ -4,7 +4,7 @@ const products = [
     image: '/images/airpods.jpg',
     description:
       'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
-    brand: 'Apple',
+    brand: 'Apples',
     category: 'Electronics',
     price: 89.99,
     countInStock: 10,
@@ -73,4 +73,4 @@ const products = [
   },
 ]
 
-module.exports =products
+module.exports ={products}
